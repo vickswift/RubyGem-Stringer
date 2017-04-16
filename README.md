@@ -20,18 +20,34 @@ Or install it yourself as:
     $ gem install stringer
 
 ## Usage
+The following methods should be invoked on any string instanceto achieve desired results as illustrated in eacch example for method explanation below:
 
-TODO: Write usage instructions here
+spacify: Concatenates undefined number of strings with a space. 
+Example: Stringer.spacify("Oscar", "Vazquez", "Zweig", "Olasaba", "Hernandez", "Ricardo", "Mendoza"), will be converted to "Oscar Vazquez Zweig Olasaba Hernandez Ricardo Mendoza"
 
-## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake spec` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+minify: Minifies the string depending on the argument value and shortens the string up to the number of characters in the argument and adds '...'" 
+Example 1: Stringer.minify("Hello, I'm learning how to create a gem", 10)) to ("Hello, I'm...")
 
-To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Example2: returns the string if the argument is less than the length of the string. That is:
+Stringer.minify("Hello", 10)) comes out to be ("Hello")
+   
+
+replacify: Iterates over a string and replaces each instance a word with a replacement word.
+Example: Stringer.replacify("I can't do this", "can't", "can") to ("I can do this")
+
+
+tokenize: Iterates over a string and adds each word into an array.
+Example: Stringer.tokenize("I love to code")) come out to be (["I", "love", "to", "code"])
+
+
+removify: Removes each instance of a word.
+Example: Stringer.removify("I'm not a developer", "not")) will become ("I'm a developer")
+
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/stringer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/vickswift/RubyGem-Stringer. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
