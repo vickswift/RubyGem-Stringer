@@ -8,7 +8,7 @@ It's a simple ruby gem that extends the functionality of Ruby strings
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'stringer'
+gem "stringer", :git => "git@github.com:vickswift/RubyGem-Stringer.git"
 ```
 
 And then execute:
