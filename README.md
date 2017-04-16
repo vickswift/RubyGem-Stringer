@@ -22,26 +22,26 @@ Or install it yourself as:
 ## Usage
 The following methods should be invoked on any string instanceto achieve desired results as illustrated in eacch example for method explanation below:
 
-spacify: Concatenates undefined number of strings with a space. 
+```spacify```: Concatenates undefined number of strings with a space. 
 Example: Stringer.spacify("Oscar", "Vazquez", "Zweig", "Olasaba", "Hernandez", "Ricardo", "Mendoza"), will be converted to "Oscar Vazquez Zweig Olasaba Hernandez Ricardo Mendoza"
 
 
-minify: Minifies the string depending on the argument value and shortens the string up to the number of characters in the argument and adds '...'" 
+```minify```: Minifies the string depending on the argument value and shortens the string up to the number of characters in the argument and adds '...'" 
 Example 1: Stringer.minify("Hello, I'm learning how to create a gem", 10)) to ("Hello, I'm...")
 
 Example2: returns the string if the argument is less than the length of the string. That is:
 Stringer.minify("Hello", 10)) comes out to be ("Hello")
    
 
-replacify: Iterates over a string and replaces each instance a word with a replacement word.
+```replacify```: Iterates over a string and replaces each instance a word with a replacement word.
 Example: Stringer.replacify("I can't do this", "can't", "can") to ("I can do this")
 
 
-tokenize: Iterates over a string and adds each word into an array.
+```tokenize```: Iterates over a string and adds each word into an array.
 Example: Stringer.tokenize("I love to code")) come out to be (["I", "love", "to", "code"])
 
 
-removify: Removes each instance of a word.
+```removify```: Removes each instance of a word.
 Example: Stringer.removify("I'm not a developer", "not")) will become ("I'm a developer")
 
 
