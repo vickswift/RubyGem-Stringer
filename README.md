@@ -20,7 +20,7 @@ Or install it yourself as:
     $ gem install stringer
 
 ## Usage
-The following methods should be invoked on any string instanceto achieve desired results as illustrated in eacch example for method explanation below:
+Invoke following methods on string instance(s) to achieve desired results.
 
 ```spacify```: Concatenates undefined number of strings with a space. 
 Example: Stringer.spacify("Oscar", "Vazquez", "Zweig", "Olasaba", "Hernandez", "Ricardo", "Mendoza"), will be converted to "Oscar Vazquez Zweig Olasaba Hernandez Ricardo Mendoza"
